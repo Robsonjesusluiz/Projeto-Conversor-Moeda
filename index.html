@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./conversor moeda.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./conversor.css">
+    <title>💲💲 Convert💱Money 💰</title>
+
+</head>
+
+<body>
+
+    <video autoplay loop muted playsinline id="bg-video">
+        <source src="./assets/image-conversor.jpg" type="video/mp4">
+
+    </video>
+
+    <img class="logo" src="./assets/fileCUsersASUSOneDriveDesktoplogo.gif.gif" alt="logo-convert-money" width="500px" />
+
+    <main>
+        <label>
+            💱 Converter <b>de</b>: 💲
+            <select class="cash-select" />
+            <option value="real"><b>💲 R$ Real Brasileiro</b></option>
+            <option value="dolar-americano" disabled><b>💲 US$ Dólar Americano</b></option>
+            <option value="euro"><b>💲 € Euro</b></option>
+            <option value="libra"><b>💲 £ Libra</b></option>
+            <option value="bitcoin"><b>💲 Bitcoin</b></option>
+            </option>
+            </select>
+        </label>
+
+        <label>
+            💱 Converter <b>para</b>:
+            <select class="currency-select">
+                <option value="dolar"><b>💲 US$ Dólar Americano</b></option>
+                <option value="euro"><b>💲 € Euro</b></option>
+                <option value="libra"><b>💲 £ Libra</b></option>
+                <option value="bitcoin"><b>💲 Bitcoin</b></option>
+                <option value="real"><b>💲 R$ Real Brasileiro</b></option>
+            </select>
+        </label>
+
+        <label>
+            💲 <b>Valor:</b>
+            <input typer="number" class="input-currency" placeholder="R$ 10.000,00" />
+        </label>
+
+        <button class="convert-button">💱 Converter</button>
+        <div class="todas-section">
+            <section>
+                <div class="currency-box">
+                    <img class="cash-img" src="./assets/Real.png" alt="logo-moeda-a-converter-real" width="45px" />
+                    <p class="currency" id="cash-name">Real</p>
+                    <p class="currency-value-to-convert">R$ 0.00</p>
+                    <img class="arrow-img" src="./assets/seta.png" alt="seta" />
+                </div>
+            </section>
+
+            <section>
+                <div class="currency-box">
+                    <img class="currency-img" src="./assets/dolar.png" alt="logo-moeda-a-convertida-dolar" />
+                    <p class="currency" id="currency-name">Dólar americano</p>
+                    <p class="currency-value-converted">US$ 0.0</p>
+                </div>
+            </section>
+
+            <section>
+                <div class="currency-box">
+                    <img class="euro" src="assets/Euro-€.png" alt="logo-moeda-a-convertida-euro" />
+                    <p class="currency">Euro</p>
+                    <p class="currency-value-converted">€ 1.8000,00</p>
+                </div>
+            </section>
+
+            <section>
+                <div class="currency-box">
+                    <img class="libra" src="assets/libra.png" alt="logo-moeda-a-convertida-libra" />
+                    <p class="currency">Libra</p>
+                    <p class="currency-value-converted">£ 1.5000,00</p>
+                </div>
+            </section>
+
+            <section>
+                <div class="currency-box" margin: auto; padding-left: 0px;>
+                    <img class="bitcoin" src="assets/bitcoin.png" alt="logo-moeda-a-convertida-bitcoin" />
+                    <p class="currency">Bitcoin</p>
+                    <p class="currency-value-converted"> 0.02</p>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

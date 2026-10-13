@@ -1,0 +1,151 @@
+/*font-family: "Roboto", sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+}
+
+/* Remove margens padrão do body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Configuração do vídeo de fundo */
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    /* Garante que o vídeo fique atrás de todo o conteúdo */
+    object-fit: cover;
+    /* Funciona como o background-size: cover */
+    background: url('./assets/image-conversor.jpg') no-repeat center center;
+    /* Imagem de segurança caso o vídeo falhe */
+    background-size: cover;
+}
+
+.logo {
+    height: 226px;
+    width: 350px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 60px;
+}
+
+main {
+    width: 375px;
+    background: #f4f4f4;
+    margin: 0 auto 40px;
+    padding: 44px 24px 23px;
+    border-radius: 20px;
+    /* cima, lados-esquerda/direita) ultimo valor é para baixo */
+}
+
+label {
+    color: #777777;
+    font-weight: 400;
+    font-size: 14px;
+    box-shadow: 0px 30px 17px rgba(85, 64, 20, 0.2);
+}
+
+/* caso queira que a seta do quado desapareça é só usar (appearance: none;) - ok */
+select {
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #555555;
+    cursor: pointer;
+}
+
+input {
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #555555;
+    cursor: pointer;
+}
+
+button {
+    border-radius: 34px;
+    background: #772FD3;
+    width: 100%;
+    height: 48px;
+    color: #ffff;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0px 24px 15px rgba(100, 64, 20, 0.2);
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+section {
+    border: 0px solid #772FD3;
+    border-radius: 20px;
+    padding: 14px 100px 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: fill;
+    margin: auto;
+    box-shadow: 0px 15px 13px rgba(100, 64, 20, 1.2);
+    /* Centralização automática */
+    cursor: pointer;
+}
+
+.arrow-img {
+    margin: 15px 0;
+    margin: auto;
+}
+
+.currency-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
+}
+
+.currency {
+    color: #777777;
+    font-size: 14px;
+}
+
+.curency-value,
+.currency-value-to-convert {
+    color: #555555;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.todas-section .cash-select {
+    border: 2px solid black;
+    margin-top: 10px;
+    border-radius: 4%;
+}
